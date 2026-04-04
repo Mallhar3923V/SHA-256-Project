@@ -28,7 +28,7 @@ def sha256(x):
 
         for n in range(64):
             #update each of A,B,C................
-            T1 = (H + Big_sigma2(E) + ch(E,F,G) + K[n] + W[n]) & 0xFFFFFFFF
+            T1 = (H + Big_sigma2(E) + ch(E,F,G) + constants_K[n] + W[n]) & 0xFFFFFFFF
             T2 = (Big_sigma1(A) + maj(A,B,C)) & 0xFFFFFFFF
             A, B, C, D, E, F, G, H = (T1 + T2) & 0xFFFFFFFF, A, B, C, (D + T1) & 0xFFFFFFFF, E, F, G
 
