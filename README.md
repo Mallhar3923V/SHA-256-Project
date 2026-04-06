@@ -1,4 +1,4 @@
-# SHA-256 Cryptographic Hash Engine
+# SHA-256 Cryptographic Hash Algorithm
 
 This repository contains a fully functional, from-scratch implementation of the SHA-256 cryptographic hash algorithm. It is written in pure Python without using any external cryptographic libraries like hashlib.
 
