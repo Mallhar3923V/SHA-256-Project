@@ -42,12 +42,15 @@ Below are standard test cases verifying the deterministic nature of the algorith
 
 **Input:** *(Empty String)*
 **Output:** `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+**Verdict** = Matches with the output from hashlib.sha256()
 
 **Input:** `abc`
 **Output:** `ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad`
+**Verdict** = Matches with the output from hashlib.sha256()
 
 **Input:** `Mallhar`
 **Output:** `34f8a37f59d584ab8d2aab24fb142a78127f8a7042a3cf2179f826352ea2a1a0`
+**Verdict** = Matches with the output from hashlib.sha256()
 
 ---
 
