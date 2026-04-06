@@ -9,7 +9,7 @@ def preprocess(message):
     l = len(bytes_message)*8 #---> the number of bits in the original message
     #adding one to the bytes_message but as we are working in bytes we will have to append 1000000
     bytes_message.append(0x80)
-    #k = (512-l-1-64-7 ) % 512 #---> the number of zeros
+    k = (512-l-1-64-7 ) % 512 #---> the number of zeros
     while len(bytes_message) % 64 != 56:
         bytes_message.append(0x00)
 
